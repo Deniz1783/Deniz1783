@@ -1,0 +1,14 @@
+{
+  "name": "consent-screen-share",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Consent-based one-to-one browser screen sharing with WebRTC",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "ws": "^8.18.0"
+  }
+}
