@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090909"><title>Viewer — Crimson Share</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell wide">
+<header class="top"><div class="brand"><span class="mark">◈</span><div><strong>CRIMSON SHARE</strong><small>VIEWER CONSOLE</small></div></div><span class="pill" id="state"><i></i> WAITING</span></header>
+<section class="viewer-head"><div><p class="eyebrow">LIVE SESSION</p><h1>Remote <em>viewer.</em></h1><p class="muted" id="status">Waiting for the participant to open their link and approve screen sharing.</p></div><button id="disconnect" class="danger">Disconnect</button></section>
+<section class="screen"><video id="remote" autoplay playsinline></video><div id="placeholder" class="placeholder"><div class="monitor">▣</div><strong>No screen stream yet</strong><span>The participant must approve screen sharing first.</span></div></section>
+<div class="viewer-foot"><span>● Live stream · 720p target</span><span id="connection">Not connected</span></div>
+<footer>Only view the screen with the participant's knowledge and permission. The stream is peer-to-peer; this server relays connection setup, not video.</footer>
+</main><script src="/view.js" defer></script></body></html>

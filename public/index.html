@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909"><title>Crimson Share — Screen Sharing</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="top"><div class="brand"><span class="mark">◈</span><div><strong>CRIMSON SHARE</strong><small>PRIVATE SCREEN SESSION</small></div></div><span class="pill"><i></i> READY</span></header>
+  <section class="hero"><p class="eyebrow">WEBRTC · END-TO-END MEDIA</p><h1>Share a screen.<br><em>Stay in control.</em></h1><p class="muted">Create a private session, send the participant link, and view their screen only after they approve the browser's screen-sharing prompt.</p></section>
+  <section class="panel">
+    <div class="panel-head"><span class="step">01</span><div><h2>Create a session</h2><p>One participant · One viewer · Expires after 60 minutes</p></div></div>
+    <button id="create" class="primary">＋ Create screen-sharing session</button>
+    <div id="result" class="result hidden">
+      <div class="link-block"><label>PARTICIPANT LINK — SEND THIS TO THEM</label><div class="link-row"><input id="participantLink" readonly><button data-copy="participantLink" class="copy">COPY</button></div></div>
+      <div class="link-block"><label>YOUR VIEWER LINK — KEEP PRIVATE</label><div class="link-row"><input id="viewerLink" readonly><button data-copy="viewerLink" class="copy">COPY</button></div></div>
+      <p class="hint">Treat the viewer link like a password. Anyone who has it may be able to watch the approved share.</p>
+      <a id="openViewer" class="primary as-link" target="_blank" rel="noopener">Open viewer ↗</a>
+    </div>
+    <p id="error" class="error" role="alert"></p>
+  </section>
+  <footer>Screen sharing requires the participant's explicit browser approval. They can stop sharing at any time. No screenshots or recordings are stored by this app.</footer>
+</main>
+<script src="/home.js" defer></script>
+</body></html>
